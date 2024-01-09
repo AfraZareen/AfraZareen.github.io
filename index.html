@@ -10,47 +10,53 @@
     <title>Elysian Spice</title>
 </head>
 <body>
+  <!--header of the page-->
   <header>
+    <!--from screen min-width 801px to min-width 1025px-->
     <nav class="big-screen">
       <a href="#home" class="active">Home</a>
       <a href="#reserv">Booking</a>
       <a href="#experience">Our Story</a>
       <hr>
-
     </nav>
+    <!--logo and heading-->
     <div class="right">
       <h3 class="heading"><img class="logo" src="logo.png" alt="" width="50" height="50">Elysian Spice</h3>
     </div>
       
-      <nav class="big-screen">
+    <nav class="big-screen">
       <a href="#Menu">Menu</a>
       <a href="#Catering">Catering</a>
       <a href="#contact">Contact</a>
       <hr>
-      </nav>
-      <nav class="small-screen">
-        <ul>
-          <li>
-            <!-- Drop-down menu -->
-            <a class="main" href="#" onclick="toggleMenu()">
-              <img src="Menu.png" alt="" width="20" height="20">
-            </a>
-            <ul id="dropdown">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#reserv">Booking</a></li>
-              <li><a href="#experience">Our Story</a></li>
-              <li><a href="#Menu">Menu</a></li>
-              <li><a href="#Catering">Catering</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
+    </nav>
+
+    <!--for small screen-->
+    <nav class="small-screen">
+      <ul>
+        <li>
+          <!-- Drop-down menu -->
+          <a class="main" href="#" onclick="toggleMenu()">
+            <img src="Menu.png" alt="" width="20" height="20">
+          </a>
+          <ul id="dropdown">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#reserv">Booking</a></li>
+            <li><a href="#experience">Our Story</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Catering">Catering</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </header>
+
   <img class="background-image" src="2.png" alt="" width="500px" height="300px">
-    <section id="home">
+
+  <!--home page-->
+  <section id="home">
     <img class="intro-img" src="pexels-chan-walrus-958545 1.png" alt="">
-    
     <div class="flex">
       <div class="rectangle-2"></div>
       <div class="flex-1">
@@ -61,7 +67,10 @@
       </div>
     </div>
     </div>
-    <section id="reserv">
+  </section>
+
+  <!--reservation section-->
+  <section id="reserv">
     <div class="booking">
       <h2>Make a Reservation</h2>
       <div class="form-container">
@@ -81,14 +90,15 @@
           <div class="text">Time</div>
           <input class="time" type="time" required>
         </div>
-        
       </div>
       <div class="submit">
         <input type="button" value="Submit" onclick="bookingMessage(event)">
       </div>
-        <div id="bookingDone" style="display: none;">Booked!</div>
+      <div id="bookingDone" style="display: none;">Booked!</div>
     </div>
   </section>
+
+  <!--our story section-->
   <section id="experience">
     <div class="more">
       <p class="text2">From Classic Favorites to exotic Delights. We have something for every palate</p>
@@ -116,98 +126,97 @@
       </div>
     </section>
 
+    <!--menu section-->
     <section id="Menu">
       <div class="menu">
         <h2 class="subheading2"><span>D</span>iscover Our <span>M</span>enu</h2>
         <p class="sub-line1">Experience the fusion of Indian and Arabic flavors at our restaurant,
            where spices intertwine to create a unique and delightful culinary journey.</p>
-
-            <div class="containers">
-              <div class="slider-wrapper">
-                <button id="prev-slide" class="slide-button material-symbols-rounded">
-                </button>
-                <ul class="image-list">
-                  <div class="card card-1">
-                      <img class="image-item" src="indian food.jpg" alt="img-1" />
-                      <div class="card-body">
-                          <h1 class="card-title">Indian Cuisine</h1>
-                      </div>
+        <div class="containers">
+          <div class="slider-wrapper"> <!--consists of button and a cards-->
+            <button id="prev-slide" class="slide-button material-symbols-rounded"></button>
+            <ul class="image-list">
+              <div class="card card-1">
+                <img class="image-item" src="indian food.jpg" alt="img-1" />
+                <div class="card-body">
+                    <h1 class="card-title">Indian Cuisine</h1>
                   </div>
-                  <div class="card card-2">
-                      <img class="image-item" src="arabic food.jpeg" alt="img-2" />
-                      <div class="card-body">
-                          <h1 class="card-title">Arabic Cuisine</h1>
-                      </div>
-                  </div>
-      
-                  <div class="card card-3">
-                      <img class="image-item" src="Salads.jpg" alt="img-3" />
-                      <div class="card-body">
-                          <h1 class="card-title">Salads</h1>
-                      </div>
-                  </div>
-                  
-                  <div class="card card-4">
-                      <img class="image-item" src="Soup.jpg" alt="img-4" />
-                      <div class="card-body">
-                          <h1 class="card-title">Soups and Starters</h1>
-                      </div>
-                  </div>
-      
-                  <div class="card card-5">
-                      <img class="image-item" src="BBQ.jpg" alt="img-5" />
-                      <div class="card-body">
-                          <h1 class="card-title">BBQ</h1>
-                      </div>
-                  </div>
-      
-                  <div class="card card-6">
-                      <img class="image-item" src="Indian desserts.jpg" alt="img-6" />
-                      <div class="card-body">
-                          <h1 class="card-title">Indian Desserts</h1>
-                      </div>
-                  </div>
-                  
-                  <div class="card card-7">
-                      <img class="image-item" src="Arabic desserts.jpg" alt="img-7" />
-                      <div class="card-body">
-                          <h1 class="card-title">Arabic Desserts</h1>
-                      </div>
-                  </div>
-                  
-                  <div class="card card-8">
-                      <img class="image-item" src="Fresh juice and milkshakes.jpg" alt="img-8" />
-                      <div class="card-body">
-                          <h1 class="card-title">Fresh Juice and Milkshakes</h1>
-                      </div>
-                  </div>
-                  
-                  <div class="card card-9">
-                      <img class="image-item" src="Ice cream.jpg" alt="img-9" />
-                      <div class="card-body">
-                          <h1 class="card-title">Ice Cream</h1>
-                      </div>
-                  </div>
-                </ul>
-                <button id="next-slide" class="slide-button material-symbols-rounded"></button>
               </div>
-              <div class="slider-scrollbar">
-                <div class="scrollbar-track">
-                  <div class="scrollbar-thumb"></div>
+              <div class="card card-2">
+                <img class="image-item" src="arabic food.jpeg" alt="img-2" />
+                <div class="card-body">
+                    <h1 class="card-title">Arabic Cuisine</h1>
                 </div>
               </div>
+      
+              <div class="card card-3">
+                <img class="image-item" src="Salads.jpg" alt="img-3" />
+                <div class="card-body">
+                  <h1 class="card-title">Salads</h1>
+                </div>
+              </div>
+                  
+              <div class="card card-4">
+                <img class="image-item" src="Soup.jpg" alt="img-4" />
+                <div class="card-body">
+                  <h1 class="card-title">Soups and Starters</h1>
+                </div>
+              </div>
+      
+              <div class="card card-5">
+                <img class="image-item" src="BBQ.jpg" alt="img-5" />
+                <div class="card-body">
+                  <h1 class="card-title">BBQ</h1>
+                </div>
+              </div>
+      
+              <div class="card card-6">
+                <img class="image-item" src="Indian desserts.jpg" alt="img-6" />
+                <div class="card-body">
+                  <h1 class="card-title">Indian Desserts</h1>
+                </div>
+              </div>
+                  
+              <div class="card card-7">
+                <img class="image-item" src="Arabic desserts.jpg" alt="img-7" />
+                <div class="card-body">
+                  <h1 class="card-title">Arabic Desserts</h1>
+                </div>
+              </div>
+                  
+              <div class="card card-8">
+                <img class="image-item" src="Fresh juice and milkshakes.jpg" alt="img-8" />
+                <div class="card-body">
+                  <h1 class="card-title">Fresh Juice and Milkshakes</h1>
+                </div>
+              </div>
+                  
+              <div class="card card-9">
+                <img class="image-item" src="Ice cream.jpg" alt="img-9" />
+                <div class="card-body">
+                  <h1 class="card-title">Ice Cream</h1>
+                </div>
+              </div>
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded"></button>
+          </div>
+          <!--scroll bar-->
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
             </div>
+          </div>
+        </div>
     </section>
-
+    <!--catering section-->
     <section id="Catering">
       <div class="catering">
-      <img class="img14" src="pexels-tembela-bohle-1114425.jpg" alt="">
-      <div class="part1">
-        <h2 class="subheading3">Taste the Tradition: Exquisite Catering</h2>
-        <p class="sub-para">Seamless catering mastery—precision in preparation,
-          flair in presentation. We handle your event's culinary needs with expertise, 
-          ensuring perfection every time.</p>
-       
+        <img class="img14" src="pexels-tembela-bohle-1114425.jpg" alt="">
+        <div class="part1">
+          <h2 class="subheading3">Taste the Tradition: Exquisite Catering</h2>
+          <p class="sub-para">Seamless catering mastery—precision in preparation,
+            flair in presentation. We handle your event's culinary needs with expertise, 
+            ensuring perfection every time.</p>
         </div>
       </div>
       <div class="catering-img">
@@ -217,74 +226,66 @@
       </div>
     </section>
     
-
+    <!--review slide-->
     <div class="review">
-    <h2 class="subheading4"> <span>D</span>ining <span>S</span>tories</h2>
-    <p class="sub-line2">"Wholeheartedly embracing and cherishing the profound beauty 
-      in people's reviews."</p>
-    <div class="slider-container" id="slider-container">
+      <h2 class="subheading4"> <span>D</span>ining <span>S</span>tories</h2>
+      <p class="sub-line2">"Wholeheartedly embracing and cherishing the profound beauty 
+        in people's reviews."</p>
+      <div class="slider-container" id="slider-container">
         <div class="slide-container" id="slide-container">
-            <div class="slide slide-1">
-                <h3>Review by Sarah M.</h3>
-                <p class="review-para">"A culinary journey that surpassed all expectations! 
-                  The ambiance was exquisite, reflecting the authentic fusion of Indian and 
-                  Arabic cultures. Our family loved the diverse menu; from tandoori specialties 
-                  to aromatic dishes, each bite was a celebration of rich, vibrant flavors. 
-                  We'll be back for more!"</p>
-            </div>
-                
-            <div class="slide slide-2">
-              <h3>Review by Rajiv K.</h3>
-              <p class="review-para">
-                        "Exceptional service and a menu that caters to every palate! The attention to 
-                        detail in each dish is evident, showcasing a perfect marriage of Indian and Arabic 
-                        culinary traditions. The restaurant's commitment to quality and authenticity truly 
-                        sets it apart. A must-visit for food enthusiasts!"
-              </p>
-            </div>
-                
-                <div class="slide slide-3">
-                    <h3>Review by Emily R.</h3>
-                    <p class="review-para">
-                        "Exceptional service and a menu that caters to every palate! The attention to 
-                        detail in each dish is evident, showcasing a perfect marriage of Indian and Arabic 
-                        culinary traditions. The restaurant's commitment to quality and authenticity truly 
-                        sets it apart. A must-visit for food enthusiasts!"
-                    </p>
-                </div>
-                
-                <div class="slide slide-4">
-                    <h3>Review by Karim A.</h3>
-                    <p class="review-para">
-                        "As someone with a deep appreciation for both Indian and Arabic cuisines, this 
-                        restaurant exceeded my expectations. The diverse menu and the carefully crafted 
-                        dishes showcase the chef's expertise. The combination of spices and flavors is
-                         simply divine. A five-star experience, without a doubt!"
-                    </p>
-                </div>
-                
-                <div class="slide slide-5">
-                    <h3>Review by Priya D.</h3>
-                    <p class="review-para">
-                        "I recently celebrated a special occasion at this restaurant, and it was nothing 
-                        short of spectacular. The atmosphere, the attentive staff, and, of course, the 
-                        mouthwatering dishes made it a night to remember. The fusion of Indian and Arabic 
-                        flavors is executed with perfection!"
-                    </p>
-                </div>
-                
-                <div class="slide slide-6">
-                    <h3>Review by Ahmed M.</h3>
-                    <p class="review-para">
-                        "An absolute treasure for food lovers! The Our Story section of the menu resonated 
-                        with me, and the dishes truly lived up to the narrative. From the moment you step in, you're transported into a world where Indian and Arabic culinary traditions harmoniously coexist. Highly recommended for an unforgettable dining experience!"
-                    </p>
-                </div>
-            </div>
-            
-            <div class="controls" id="dot-container"></div>
+          <div class="slide slide-1">
+            <h3>Review by Sarah M.</h3>
+              <p class="review-para">"A culinary journey that surpassed all expectations! 
+                The ambiance was exquisite, reflecting the authentic fusion of Indian and 
+                Arabic cultures. Our family loved the diverse menu; from tandoori specialties 
+                to aromatic dishes, each bite was a celebration of rich, vibrant flavors. 
+                We'll be back for more!"</p>
+          </div>
+                  
+          <div class="slide slide-2">
+            <h3>Review by Rajiv K.</h3>
+            <p class="review-para">"Exceptional service and a menu that caters to every palate! The attention to 
+            detail in each dish is evident, showcasing a perfect marriage of Indian and Arabic 
+            culinary traditions. The restaurant's commitment to quality and authenticity truly 
+            sets it apart. A must-visit for food enthusiasts!"</p>
+          </div>
+                  
+          <div class="slide slide-3">
+            <h3>Review by Emily R.</h3>
+            <p class="review-para">
+              "As a food enthusiast, this Indian Arab restaurant is a dream come true! The Biryani 
+              was bursting with spices, and the Baba Ganoush was a revelation. The staff's passion 
+              for the cuisine is evident, making the entire dining experience memorable. If you love 
+              the rich flavors of India and the Middle East, this place is a must-visit!"</p>
+          </div>
+                  
+          <div class="slide slide-4">
+            <h3>Review by Karim A.</h3>
+            <p class="review-para">"As someone with a deep appreciation for both Indian and Arabic cuisines, this 
+            restaurant exceeded my expectations. The diverse menu and the carefully crafted 
+            dishes showcase the chef's expertise. The combination of spices and flavors is
+            simply divine. A five-star experience, without a doubt!"</p>
+          </div>
+                  
+          <div class="slide slide-5">
+            <h3>Review by Priya D.</h3>
+            <p class="review-para">"I recently celebrated a special occasion at this restaurant, and it was nothing 
+            short of spectacular. The atmosphere, the attentive staff, and, of course, the 
+            mouthwatering dishes made it a night to remember. The fusion of Indian and Arabic 
+            flavors is executed with perfection!"</p>
+          </div>
+                  
+          <div class="slide slide-6">
+            <h3>Review by Ahmed M.</h3>
+            <p class="review-para">"An absolute treasure for food lovers! The Our Story section of the menu resonated 
+            with me, and the dishes truly lived up to the narrative. From the moment you step in, you're transported into a world where Indian and Arabic culinary traditions harmoniously coexist. Highly recommended for an unforgettable dining experience!"
+            </p>
+          </div>
+        </div>
+        <div class="controls" id="dot-container"></div>
+      </div>
     </div>
-
+    <!--contact us section-->
     <section id="contact">
       <div class="content-wrapper">
         <div class="container">
@@ -309,47 +310,46 @@
             <div class="right-side">
               <div class="message-text">Send us a message</div>
               <p>If you have any queries, kindly drop a message</p>
-            <form action="#">
-              <div class="input-box">
-                <input type="text" placeholder="Enter your name">
-              </div>
-              <div class="input-box">
-                <input type="text" placeholder="Enter your email">
-              </div>
-              <div class="input-box message-box">
-                <textarea></textarea>
-              </div>
-              <div class="button">
-                <input type="button" value="Send Now" onclick="sendMessage()">
-              </div>
-            </form>
-            <div id="messageSent" style="display: none;">Your message has been sent!</div>
-            
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="input-box message-box">
+                  <textarea></textarea>
+                </div>
+                <div class="button">
+                  <input type="button" value="Send Now" onclick="sendMessage()">
+                </div>
+              </form>
+              <div id="messageSent" style="display: none;">Your message has been sent!</div>
+            </div>
           </div>
         </div>
-      </div>
-    </div> 
+      </div> 
     </section>
-    
+  <!--footer-->
   <footer>
     <div class="footer">
-    <div class="top">
-      <h3 class="heading"><img class="logo" src="logo.png" alt="" width="50" height="50">Elysian Spice</h3>
-      <div class="social">
-        <h3 class="heading-4">Follow us On</h3>
-        <img class="logo-4" src="Instagram.png" alt=""width="30" height="30"> &nbsp;
-        <img class="logo-5" src="Facebook.png" alt=""width="30" height="30"> &nbsp;
-        <img class="logo-6" src="TikTok.png" alt=""width="30" height="30">
+      <div class="top">
+        <h3 class="heading"><img class="logo" src="logo.png" alt="" width="50" height="50">Elysian Spice</h3>
+        <div class="social">
+          <h3 class="heading-4">Follow us On</h3>
+          <img class="logo-4" src="Instagram.png" alt=""width="30" height="30"> &nbsp;
+          <img class="logo-5" src="Facebook.png" alt=""width="30" height="30"> &nbsp;
+          <img class="logo-6" src="TikTok.png" alt=""width="30" height="30">
+        </div>
+      </div>
+      <div class="bottom">
+        <h5>Copyright &copy; 2023</h5>
       </div>
     </div>
-    <div class="bottom">
-      <h5>Copyright &copy; 2023</h5>
-    </div>
-  </div>
   </footer>
 
-
-<script src="script.js"></script>
+  <!--javacript file-->
+  <script src="script.js"></script>
     
 </body>
 </html>
