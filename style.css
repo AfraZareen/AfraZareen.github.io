@@ -141,6 +141,7 @@ nav a.active
 /* reservation page styling */
 .booking{
   width: 80%;
+  height: 100% ;
   margin: 5% 10% 5% 10%;
   border: 2px solid #9A9288 ;
   border-radius: 20px;
@@ -184,7 +185,6 @@ input:target{
   border: none;
   padding: 8px 16px;
   margin-top: 2%;
-  margin-bottom: 2%;
   border-radius: 6px;
   background: #e24d34;
   cursor: pointer;
@@ -192,12 +192,14 @@ input:target{
 }
 .submit input[type="button"]:hover{
   background: #274026;
+  
+  font-size: 20px;
 }
 #bookingDone{
   font-family: 'Abhaya Libre', serif;
   font-size: 20px;
   text-align: center;
-  margin: 4% 0 0 0;
+  margin-top: 1%;
   color: #274026;
 }
 /* Our story section styling */
@@ -1229,7 +1231,7 @@ h5{
   .background-image{
     position: absolute;
     margin-left: 0.1px;
-    height: 60%;
+    height: 40%;
     width: 60%;
   }
   .small-screen{
