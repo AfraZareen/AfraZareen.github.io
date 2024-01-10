@@ -1231,16 +1231,14 @@ h5{
   .background-image{
     position: absolute;
     margin-left: 0.1px;
-    height: 40%;
-    width: 60%;
+    height: 45%;
+    width: 50%;
   }
   .small-screen{
     visibility: hidden;
     display: none;
   }
-  hr{
-    color:red ;
-  }
+
   .right {
     margin-left: -4%;
     padding: 0;
